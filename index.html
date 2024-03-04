@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">    <!-- Tähestik, mida kasutame  -->
     <link rel="stylesheet" type="text/css" href="style.css"/> <!-- Ühendus CSS-i ja meie lehe vahel -->
-    <title>Minu veebileht</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
+    <title>Tauno Palts</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
 </head>
 
 <body>
@@ -12,22 +12,23 @@
 
 <div class="container" style="padding: 1em">
     <div id="textBox">
-        <h1>Nimetus</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur eget lectus mi. Donec lorem magna,
-            elementum ac dui in, posuere pharetra odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur eget lectus mi. Donec lorem magna, elementum ac dui in, posuere pharetra odio.</p>
+        <h1>Tauno Palts</h1>
+        <p>Tauno Palts on Eesti üks tuntumaid  informaatika ja matemaatika lektoreid. TTG õpilaste lemmik progeja.
+            Tuntud ka kui teresiintauno, mis tuleneb tema suurest kirest oma YouTube kanali vastu. Tal on doktorikraad informaatikas. Ja tegelikult on ta üldse vahva sell. </p>
     </div>
-    <img id="photo" src="images/img.png">
+    <img id="photo" src="images/tauno.jpg">
 </div>
 
 <!-- Lõbusad faktid -->
 
 <div class="container">
     <div class="card">
-        <!-- Tee see osa ise! -->
+        <img id="photo" src="images/kivi.webp", width="250", height="250">
+        <h3>Tauno on nagu vanarahu ise</h3>
     </div>
     <div class="card">
-        <!-- Tee see osa ise! -->
+         <img id="photo" src="images/tü.png", width="365", height="250">
+        <h3>Tauno on õppinud ja töötanud Tartu Ülikoolis</h3>
     </div>
     <div class="card">
         <!-- Tee see osa ise! -->
@@ -54,7 +55,14 @@
         <!-- Tee see osa ise! -->
     </div>
 </div>
-
+<button id="surprise">Vajuta mind</button>
 </body>
+<script>
+    let button = document.getElementById("surprise");
+    button.addEventListener("click", function (){
+        let body = document.body;
+        body.style.background = "pink";
+    })
+</script>
     
 </html>
